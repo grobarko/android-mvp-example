@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MVP Example</string>
+
+    <string name="home">Home</string>
+    <string name="go_to_details">Go To Details</string>
+    <string name="logout">Logout</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+</resources>
