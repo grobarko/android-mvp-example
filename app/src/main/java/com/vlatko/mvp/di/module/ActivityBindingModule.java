@@ -1,6 +1,8 @@
 package com.vlatko.mvp.di.module;
 
 import com.vlatko.mvp.di.PerActivity;
+import com.vlatko.mvp.ui.details.DetailsActivity;
+import com.vlatko.mvp.ui.details.DetailsModule;
 import com.vlatko.mvp.ui.home.HomeActivity;
 import com.vlatko.mvp.ui.home.HomeModule;
 import com.vlatko.mvp.ui.login.LoginActivity;
@@ -19,5 +21,9 @@ public abstract class ActivityBindingModule {
     @PerActivity
     @ContributesAndroidInjector(modules = LoginModule.class)
     abstract LoginActivity loginActivity();
+
+    @PerActivity
+    @ContributesAndroidInjector(modules = DetailsModule.class)
+    abstract DetailsActivity detailsActivity();
 
 }

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -78,11 +77,5 @@ public abstract class BaseFragment extends Fragment implements HasSupportFragmen
     @Override
     public final AndroidInjector<Fragment> supportFragmentInjector() {
         return childFragmentInjector;
-    }
-
-    protected final void addChildFragment(@IdRes int containerViewId, Fragment fragment) {
-        childFragmentManager.beginTransaction()
-                .add(containerViewId, fragment)
-                .commit();
     }
 }

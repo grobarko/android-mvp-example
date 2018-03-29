@@ -8,4 +8,10 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+
+    <string name="details">Details</string>
+    <string name="extra">Extra</string>
+    <string name="go_to_last_name">Go To Last Name</string>
+    <string name="go_to_summary">Go To Summary</string>
+    <string name="reset">Reset</string>
 </resources>

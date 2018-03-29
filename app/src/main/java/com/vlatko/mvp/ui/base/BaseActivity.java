@@ -1,7 +1,6 @@
 package com.vlatko.mvp.ui.base;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -46,11 +45,5 @@ public abstract class BaseActivity extends AppCompatActivity implements HasSuppo
     @Override
     public final AndroidInjector<Fragment> supportFragmentInjector() {
         return fragmentInjector;
-    }
-
-    protected final void addFragment(@IdRes int containerViewId, Fragment fragment) {
-        fragmentManager.beginTransaction()
-                .add(containerViewId, fragment)
-                .commit();
     }
 }

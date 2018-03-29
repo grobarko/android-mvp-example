@@ -8,6 +8,7 @@ import com.vlatko.mvp.data.api.models.User;
 import com.vlatko.mvp.di.PerActivity;
 import com.vlatko.mvp.ui.base.BaseContract;
 import com.vlatko.mvp.ui.base.BasePresenter;
+import com.vlatko.mvp.ui.details.DetailsActivity;
 import com.vlatko.mvp.ui.login.LoginActivity;
 import com.vlatko.mvp.utils.rx.SchedulerProvider;
 
@@ -42,7 +43,7 @@ public class HomePresenter extends
 
     @Override
     public void onGoToDetailsClicked() {
-        // TODO: Add one more module
+        navigator.startActivity(DetailsActivity.class);
     }
 
     @Override

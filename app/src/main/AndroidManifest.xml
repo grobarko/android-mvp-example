@@ -29,5 +29,11 @@
             </intent-filter>
         </activity>
 
+        <!-- Details Activity -->
+        <activity
+            android:name="com.vlatko.mvp.ui.details.DetailsActivity"
+            android:label="@string/details"
+            android:theme="@style/AppTheme"/>
+
     </application>
 </manifest>
